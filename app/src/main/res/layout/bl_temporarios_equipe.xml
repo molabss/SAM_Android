@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="400dp"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+        <!-- Linha 1 - Cabecalho -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/BLACK"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/integrantes_temp"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:id="@+id/localizacaoTextView"/>
+
+            <Button
+                    android:id="@+id/btnAddTemporario"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp" />
+
+            <Button
+                    android:id="@+id/qrCodeAddTemporario"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/camera"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/GRAY2">
+        <TextView
+                android:id="@+id/horarioText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:textColor="@color/WHITE"
+                android:text="@string/integrante"/>
+
+        <TextView
+                android:id="@+id/horaIniText"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:layout_marginRight="50dp"
+                android:textSize="20sp"
+                android:textColor="@color/WHITE"
+                android:text="@string/matricula" />
+
+    </LinearLayout>
+
+    <!-- Texto exibido quando grid estiver vazia -->
+    <TextView
+            android:id="@+id/empty_list_temporario_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/grid_vazio"
+            android:background="@color/DARK_GRAY"
+            android:visibility="gone" />
+
+    <GridView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/temporarioEquipeGridView"/>
+
+</LinearLayout>

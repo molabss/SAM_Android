@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newHeaderFob"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="2dp"
+    android:paddingTop="0dp" >
+
+    <Button
+        android:id="@+id/columnHeaderEqp1"
+        android:layout_width="550dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold" />
+
+</TableRow>

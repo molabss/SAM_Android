@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/DARK_GRAY"
+              android:gravity="center|left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/equipeText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="@string/equipe"/>
+
+    <ImageView
+            android:id="@+id/equipeImage"
+            android:src="@drawable/equipe"
+            android:contentDescription="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    <ImageView
+            android:id="@+id/excluirImage"
+            android:src="@drawable/delete"
+            android:contentDescription="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+</LinearLayout>

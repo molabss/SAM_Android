@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- LABELS -->
+
+    <string name="label_abastecimento">Abastecimento</string>
+    <string name="abastecimentos">Abastecimentos</string>
+    <string name="abastecedor">Abastecedor</string>
+    <string name="app_name">Constran SAM</string>
+    <string name="atividade">Atividade</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cc_obra">Centro de Custo</string>
+    <string name="cc_obra2">Centro de Custo 2</string>
+    <string name="data_hora">Data e Hora</string>
+    <string name="dados">Data</string>
+    <string name="data_saida">Data saída</string>
+    <string name="destino">Destino</string>
+    <string name="dispositivo">Dispositivo</string>
+    <string name="equipamentoCarga">Eqpto. Carga</string>
+    <string name="servico">Serviço</string>
+    <string name="componente">Componente</string>
+    <string name="equipe">Equipe</string>
+    <string name="pluviometro">Pluviômetro</string>
+    <string name="volumeChuva">Volume Chuva</string>
+    <string name="integrante">Integrante</string>
+    <string name="integrantes_temp">Integrantes Temporários</string>
+    <string name="matricula">Matrícula</string>
+    <string name="manual">Manual</string>
+    <string name="automatico">Automático</string>
+    <string name="smsmt">SMSMT</string>
+    <string name="encarregado">Encarregado</string>
+    <string name="evento">Evento Equipe</string>
+    <string name="evento_evento">Evento</string>
+    <string name="evento_indiv">Evento Integrante</string>
+    <string name="historico_eventos">Histórico Equipe</string>
+    <string name="historico_eventos_indiv">Histórico Integrante</string>
+    <string name="historico">Histórico</string>
+    <string name="tipo_evento">Tipo Evento</string>
+    <string name="equipamento">Equipamento</string>
+    <string name="equipamentos">Equipamentos</string>
+    <string name="quilometragem">Hodômetro</string>
+    <string name="obra">Obra</string>
+    <string name="ok">OK</string>
+    <string name="frente_obra">Frente de Obra</string>
+    <string name="fim">Fim</string>
+    <string name="hora">Hora</string>
+    <string name="apontam">Apontamento</string>
+    <string name="horario">Horário</string>
+    <string name="hora_inicio">Hora Início</string>
+    <string name="hora_termino">Hora Término</string>
+    <string name="hora_viagem">Hora Viagem</string>
+    <string name="hora_evento">Hora Evento</string>
+    <string name="horimetros">Horímetros</string>
+    <string name="horimetro">Horímetro</string>
+    <string name="hodometro">Hodômetro</string>
+    <string name="peso">Peso (ton)</string>
+    <string name="prefixo">Prefixo</string>
+    <string name="estacasTolerancia">Estacas *</string>
+    <string name="estacas">Estaca(s)</string>
+    <string name="estaca">Estaca</string>
+    <string name="estaca_inicial">Estaca Inicial</string>
+    <string name="mao_obra">Mão de obra</string>
+    <string name="horimetro_inicial">Horímetro Inicial</string>
+    <string name="material">Material</string>
+    <string name="movimentacoes">Movimentações</string>
+    <string name="novo">Novo</string>
+    <string name="localizacao">Localização Atual</string>
+    <string name="localizacao_col">Localização</string>
+    <string name="configTablet">Sobre o Dispositivo</string>
+    <string name="abastecimento">Abastecimento / Lubrificação</string>
+    <string name="saldos">saldos</string>
+    <string name="msg_aviso">Aviso</string>
+    <string name="msg_erro">Erro</string>
+    <string name="msg_ok">OK</string>
+    <string name="observacoes">Observações</string>
+    <string name="origem">Origem</string>
+    <string name="justificativa">Justificativa</string>
+    <string name="origemDestino">Origem / Destino</string>
+    <string name="paralisacao">Paralisação</string>
+
+    <string name="manutencao_servicos">Manutenção Serviços</string>
+    <string name="equipamento_categorias">Equipamento Categorias</string>
+
+    <string name="indicePluviometrico">Índices Pluviométricos</string>
+    <string name="percentual_carga">Perc. de Carga</string>
+    <string name="operador">Operador</string>
+    <string name="operador1">Operador 1</string>
+    <string name="operador2">Operador 2</string>
+    <string name="eticket">E-Ticket</string>
+    <string name="gera_vale">Geração E-Ticket</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+    <string name="modificar">Modificar</string>
+    <string name="server">Servidor</string>
+    <string name="servicos">Serviços</string>
+    <string name="portaftp">Porta FTP</string>
+    <string name="portaweb">Porta WEB</string>
+    <string name="tolerancia">Tolerância</string>
+    <string name="duracao">Duração (h)</string>
+    <string name="producao">Produção</string>
+    <string name="producao_header">Produção</string>
+    <string name="referencia">Referência</string>
+    <string name="voltar">Voltar</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="totalConsulta">Total: #</string>
+    <string name="apropriar">Apropriar</string>
+    <string name="buscar">Buscar</string>
+
+    <string name="limpar">Limpar</string>
+
+    <string name="concluir">Concluir</string>
+    <string name="autorizacao">Autorização</string>
+    <string name="posto">Posto</string>
+    <string name="inicio">Início</string>
+    <string name="termino">Término</string>
+    <string name="confirmacao">Confirmação</string>
+    <string name="tipo">Tipo</string>
+    <string name="lubrificacao">Lubrificação</string>
+    <string name="combustivel">Combustível/ Lub.</string>
+    <string name="qte">Quantidade</string>
+    <string name="transferencia">Transferência</string>
+    <string name="rae">RAE</string>
+    <string name="dados_previos">Dados Prévios</string>
+    <string name="visualizacao">Visualização</string>
+    <string name="consulta">Consulta</string>
+    <string name="totaliz_inicial">Totalizador Inicial</string>
+    <string name="totaliz_final">Totalizador Final</string>
+    <string name="informe_senha">Informe a Senha</string>
+    <string name="mao_de_obra">Mão de Obra</string>
+    <string name="dois_pontos">:</string>
+    <string name="grid_vazio">Nenhum item adicionado</string>
+    <string name="alerta">Alerta</string>
+    <string name="unidade_medida_mm">(mm)</string>
+    <string name="manutencoes">Manutenções</string>
+
+    <!-- TOKEN QR CODE -->
+    <string name="TOKEN_QR_CODE">c0n5tran</string>
+    <string name="SPLIT_TOKEN_QR_CODE">;</string>
+
+    <!-- HINTS -->
+
+    <string name="hint_data">Data</string>
+    <string name="hint_selecione">Selecione</string>
+
+    <!-- MESSAGES -->
+
+
+    <string name="ALERT_CLEAR_DATABASE">Esta ação irá apagar os apontamentos existentes.\n\nDeseja realmente prosseguir ?</string>
+    <string name="ALERT_DESCARREGAR_INFO">Esta ação irá enviar os apontamentos existentes.\n\nDeseja realmente prosseguir ?</string>
+    <string name="ALERT_LOGOUT">Esta ação irá realizar o logout do usuário autenticado.\n\nDeseja realmente prosseguir ?</string>
+    <string name="ALERT_TEMP_FILE">Existe um abastecimento em andamento.\n\nDeseja prosseguir ?</string>
+    <string name="ALERT_GENERATE_FILE">Necessário gerar arquivo.</string>
+    <string name="ALERT_UPDATE">Deseja realmente atualizar o Tablet?</string>
+    <string name="ALERT_LOCATION">Para prosseguir, informe sua localização atual.</string>
+    <string name="ALERT_USER_NOT_LOGGED">Para prosseguir, é necessário informar o usuário.</string>
+    <string name="ALERT_STATION">Para prosseguir, informe o Posto nas configurações do dispositivo.</string>
+    <string name="ALERT_SUCESS_GENERATION"># gerado com sucesso !</string>
+    <string name="ALERT_BLANK_APROP_CREATE">Não existem apontamentos registrados no banco de dados !</string>
+    <string name="ALERT_SUCESS_SEND"># enviado com sucesso !</string>
+    <string name="ALERT_SUCESS_COPY"># copiado com sucesso !</string>
+    <string name="ALERT_SUCESS_DESCARREGAMENTO">Apontamentos descarregados com sucesso !</string>
+    <string name="ALERT_SUCESS_ATUALIZACAO">Atualização realizada com sucesso !</string>
+    <string name="ALERT_EXIST_REQUIRED">Existem campos obrigatórios não preenchidos !</string>
+    <string name="ALERT_REQUIRED"># é um campo obrigatório !</string>
+    <string name="ALERT_REQUIRED_ESTACAS">Estacas é um campo obrigatório pra listar #!</string>
+    <string name="ALERT_INVALID_VALUE"># possui um valor inválido !</string>
+    <string name="ALERT_LENGTH_NUMBER">#deve possuir # dígitos !</string>
+    <string name="ALERT_FILE_NOT_SEND">Não é possível limpar apontamentos !\nArquivo # ainda não foi enviado p/ o servidor !</string>
+    <string name="ALERT_OFFLINE">Necessária conexão à Internet !</string>
+    <string name="ALERT_SERVER_OFFLINE">Erro ao conectar ao Servidor, tente novamente !</string>
+    <string name="ALERT_SUCESS_UPDATE">Atualização realizada com sucesso !</string>
+    <string name="ALERT_FAIL_UPDATE">Não foi possível realizar a operação!</string>
+    <string name="ALERT_SELECT_EQP">Selecione um Equipamento !</string>
+    <string name="ALERT_APONTAMENTOS_EXISTENTES">Para atualizar, descarregue os apontamentos existentes !</string>
+    <string name="ALERT_SELECT_ABASTECEDOR">Selecione um Abastecedor !</string>
+    <string name="ALERT_SELECT_OPERADOR">Selecione um Operador !</string>
+    <string name="ALERT_SELECT_ABASTECEDOR_QRCODE">QRCode de Abastecedor inválido !</string>
+    <string name="ALERT_SELECT_OPERADOR_QRCODE">QRCode de Operador inválido !</string>
+    <string name="ALERT_SELECT_INTEGRANTE_QRCODE">QRCode de Integrante inválido !</string>
+    <string name="ALERT_SELECT_ABASTECEDOR_VALIDO">Selecione um Abastecedor valido !</string>
+    <string name="ALERT_SELECT_ABS">Selecione um Combustível / Lubrificante !</string>
+    <string name="ALERT_SELECT_QTD">Informe a quantidade !</string>
+    <string name="ALERT_INFORME_SENHA_OPERADOR">Informe a senha do operador</string>
+    <string name="ALERT_INTEGRANTE_EXISTENTE">Este integrante já foi adicionado!</string>
+    <string name="ALERT_CONFIRM_EQUIPE_REMOVE">Os eventos desta equipe serão removidos. Deseja realmente continuar ?</string>
+    <string name="ALERT_CONFIRM_REMOVE">Deseja realmente excluir este registro ?</string>
+    <string name="ALERT_EXISTS_CHILDS_MOV">Não é possível excluir. Existem viagens associadas.</string>
+    <string name="ALERT_EXISTS_CHILDS_EQP">Não é possível excluir. Existem eventos associados.</string>
+    <string name="ALERT_IMPORT_FILE_NOT_FOUND">Necessário baixar arquivo #.</string>
+    <string name="ALERT_IMPORT_FILE_INVALID">Arquivo de importação # inválido ou incompleto !</string>
+    <string name="ALERT_IMPORT_SEM_DADOS">Arquivo de importação não possui registros em # !</string>
+    <string name="ALERT_EXPORT_FILE_INVALID">Arquivo inválido ou incompleto !</string>
+    <string name="ALERT_INCOMPLETE_VALUES">Dados incompletos ! Clique na imagem para editar.</string>
+    <string name="ALERT_CONFIRM_COPY">A localização atual será alterada. Deseja continuar?</string>
+    <string name="ALERT_QTD_EMPTY">Quantidade deve ser maior que 0 !</string>
+    <string name="ALERT_TOTALIZADOR_FIM_INVALIDO">O Totalizador Final deve ser maior do que o inicial !</string>
+    <string name="ALERT_HOUR_INVALID"># inválida !</string>
+    <string name="ALERT_SENHA_INVALIDA">Senha Inválida !</string>
+    <string name="AGUARDE">Aguarde</string>
+    <string name="EM_ANDAMENTO">Em andamento ..</string>
+    <string name="ALERT_OBRA_CADASTRADO">Obra # não cadastrada!</string>
+    <string name="ALERT_PERIOD_INVALID">Período de # à # inválido !</string>
+    <string name="ALERT_KM_INVALID">Horímetro Final não pode ser inferior ao Horímetro Inicial !</string>
+    <string name="ALERT_CONFIG_FILE_NOT_FOUND">Arquivo de configuração não encontrado</string>
+    <string name="ALERT_CONFIG_FILE_INVALID">Arquivo de configuração inválido ou incompleto !</string>
+    <string name="ALERT_BALANCE">O Saldo atual (#) é inferior à quantidade informada.\n\nDeseja prosseguir ?</string>
+    <string name="ALERT_HOURS">O Horímetro informado é igual ou superior ao último (#).\n\nDeseja prosseguir ?</string>
+    <string name="ALERT_KM">O Hodômetro informado é igual ou superior ao último (#).\n\nDeseja prosseguir ?</string>
+    <string name="ALERT_HOR_OR_KM_REQUIRED">Necessário informar Horímetro ou Hodômetro !</string>
+    <string name="ALERT_SERV_OR_PARALIZ">Necessário informar \'Serviço\' ou \'Paralização\'</string>
+    <string name="ALERT_HOUR_INTERVAL">Hora do evento já em uso pelo equipamento.</string>
+    <string name="ALERT_ABS_NOT_FOUND">Não existem abastecimentos realizados !</string>
+    <string name="ALERT_VALOR_INVALIDO">Valor digitado não é válido</string>
+    <string name="ALERT_APROPRIACOES_VOID">Não existem apropriações cadastradas</string>
+    <string name="ALERT_USUARIO_NAO_LOGADO">Usuário não está logado no aplicativo !</string>
+    <string name="ALERT_SEM_EQUIP_ASSOCIADOS_CATEGORIA">Não existem compartimentos associados a categoria do equipamento</string>
+    <string name="ALERT_DATA_TABLET_INVALIDA">A dados do dispositivo está incorreta!\nAjuste para a dados atual</string>
+    <string name="ALERT_VALOR_NEGATIVO">O valor deve ser positivo!</string>
+    <string name="ALERT_POSTO_COM_ABASTECIMENTO_DIA">O posto não pode ser modificado porque existem # apontados.</string>
+    <string name="ALERT_EVENTO_SEM_DATA_FIM">Existe um evento sem dados término cadastrado.</string>
+    <string name="ALERT_EVENTO_PERIODO_INVALIDO">Existe um conflito de horários no apontamento.</string>
+    <string name="ALERT_EVENTO_HORA_FIM_INVALIDO">A hora término só pode ser vazia no último registro do dia.</string>
+    <string name="ALERT_COPIAR_APONTAMENTOS_TEMPORARIO">Deseja copiar os apontamentos da equipe para este integrante ?</string>
+    <string name="ALERT_EXCLUIR_APONTAMENTOS_TEMPORARIO">Os apontamentos deste integrante serão apagados. Deseja continuar ?</string>
+    <string name="ALERT_COPIAR_APONTAMENTOS_PRESENTE">Deseja copiar os apontamentos para este integrante (caso existam) ?</string>
+    <string name="ALERT_LIMPAR_FORM">Os dados informados serão limpos. Deseja prosseguir ?</string>
+    <string name="ALERT_SEM_EVENTOS">Não existem apontamento para esta equipe neste local</string>
+    <string name="ALERT_INTEGRANTE_EQUIPE_INVALIDO">Integrante não pode ser adicionado a esta equipe</string>
+    <string name="ALERT_FALHA_AO_ADD_TEMP">Integrante não pode ser adicionado a lista de temporários</string>
+    <string name="ALERT_INTEGRANTE_INDISPONIVEL">O integrante está alocado em outra equipe ou não pertence a nenhuma equipe cadastrada</string>
+    <string name="ALERT_USUARIO_NAO_INFORMADO">É preciso informar o usuário responsável pela apropriação na tela de Configurações do Dispositivo.</string>
+    <string name="ALERT_SALVAR_MUDANCAS">Deseja salvar as mudanças feitas?</string>
+    <string name="ALERT_SALVAR_EVENTOS_NAO_SALVOS">Deseja salvar os eventos apontados automaticamente?</string>
+    <string name="ALERT_EVENTOS_NAO_SALVOS">Os eventos apontados automaticamente precisam ser salvos</string>
+    <string name="ALERT_SEM_EVENTOS_AUTOMATICOS">Não existem eventos automáticos associados a esta equipe</string>
+    <string name="ALERT_CONFLITO_ABASTECIMENTO">Já existe um abastecimento neste horário com este combustível/lubrificante</string>
+    <string name="NAO_INFORMADO">Não informado</string>
+
+    <string name="ALERT_NOVO_FOI_SALVO">Registrado com sucesso!</string>
+    <string name="ALERT_ATUALIZADO_SUCESSO">Registro atualizado com sucesso!</string>
+    <string name="ALERT_EQUIPAMENTO_JA_CADASTRADO_MANUTENCAO">Equipamento já está cadastrado para manutenções hoje.</string>
+
+    <string name="ERROR_DE_CONEXAO">Erro ao conectar no banco de dados</string>
+    <string name="ERROR_LEITURA_QR_CODE">Erro de Leitura</string>
+    <string name="ERROR_INESPERADO">Ocorreu um erro inesperado</string>
+    <string name="ERROR_EQUIPAMENTO_INVALIDO">Equipamento não identificado</string>
+    <string name="ERROR_QRCODE_EQUIPAMENTO_INVALIDO">Não existe equipamento cadastrado para esse QRCode</string>
+    <string name="ERROR_QRCODE_FORM_INVALIDO">QRCode do Formulário inválido!</string>
+    <string name="ERROR_QRCODE_EQUIP_INVALIDO">QRCode inválido!</string>
+    <string name="ERROR_SOMA_VALORES_QTE">A soma dos valores não é igual a quantidade de</string>
+    <string name="ERROR_SEND_FILE">Ocorreu um erro ao enviar o arquivo.</string>
+    <string name="ERROR_DOWNLOAD_FILE">Ocorreu um erro ao baixar o arquivo: #</string>
+    <string name="ERROR_VALIDATE_CUTTING_INI">Estaca Inicial informada não corresponde ao local:\n\n #.</string>
+    <string name="ERROR_VALIDATE_CUTTING">Estaca informada não corresponde ao local: \n\n #.</string>
+    <string name="ERROR_EQUAL_TIME_VGM">Não foi possível salvar.\n\nExiste um registro com a mesma Hora Viagem.</string>
+    <string name="ERROR_EQUAL_TIME_EVN">Não foi possível salvar.\n\nExiste um registro com a mesma Hora Evento.</string>
+
+
+    <string name="ARRAY_STRING_INTENT_INFOS">INFOS</string>
+
+    <!-- Configurações -->
+
+    <!-- ANTIGOS WEBSERVICES  -->
+    <string name="FONT_MONACO">fonts/monaco.ttf</string>
+
+    <string name="URL_SERVER">http://#:8080/ServerManagerMobile/Manager</string>
+
+    <string name="SAM_CENTRAL_CONTEXT">ServerManagerMobile/Manager</string>
+    <!-- ********************  -->
+
+
+    <!-- NOVOS WEBSERVICES  -->
+
+    <string name="SAM_CENTRAL_CONTEXT_NEW">samcentral/ws</string>
+
+    <string name="SAM_CENTRAL_CONTEXT_EXPORTA_ARQUIVO">exporta/arquivoParaServidor</string>
+
+    <string name="SAM_CENTRAL_CONTEXT_IMPORTA_ARQUIVO">importa/dadosParaOtablet</string>
+
+    <string name="SAM_LOG_AUDITOR_CONTEXT">samauditor/ws/logs/gravar</string>
+
+    <!-- *****************  -->
+
+
+
+    <!-- 189.86.43.163  -->
+    <string name="DIR_CONFIG">Constran/config</string>
+    <string name="DIR_TEMP">Constran/</string>
+    <string name="DIR_DATABASE">Constran/database</string>
+    <string name="DIR_EXPORT">Constran/export/</string>
+    <string name="DIR_LOG">Constran/log/</string>
+    <string name="DIR_IMPORT">Constran/import</string>
+    <string name="DIR_FILES">/Files/</string>
+    <string name="DIR_MOBILE">/mobile/</string>
+    <string name="DIR_WEB">/web/</string>
+    <string name="DIR_FTP_LIST">#/web/</string>
+
+    <string name="FTP_USER">ftpuser</string>
+    <string name="FTP_PASS">d3e4f</string>
+
+    <string name="FILE_CONFIG">config.json</string>
+
+    <string name="PATH_EXPORT_FTP">/opt/tomcat7/webapps#/web</string>
+    <string name="PATH_IMPORT_FTP">/opt/tomcat7/webapps#/mobile</string>
+    <string name="PATH_APK_FTP">/opt/tomcat7/webapps/Files/install/</string>
+
+    <string name="UTF_8">UTF-8</string>
+
+    <string name="DATA_ULT_VERSAO">27/05/2014</string>
+
+    <!-- Constantes -->
+
+    <string name="OK">OK</string>
+    <string name="EMPTY"></string>
+    <string name="TOKEN">#</string>
+
+    <string name="CANCELAR">CANCELAR</string>
+    <string name="BAR">/</string>
+    <string name="Y">Y</string>
+    <string name="N">N</string>
+    <string name="SIM">Sim</string>
+    <string name="NAO">Não</string>
+    <string name="AVISO">AVISO</string>
+    <string name="TRACE">-</string>
+    <string name="SELECT">Selecione</string>
+    <string name="ADD">+</string>
+    <string name="REFRESH">*</string>
+    <string name="DESC_RODAPE_LOCAL"> * Tolerância de # metro(s).</string>
+    <string name="TWO_DOTS">:</string>
+
+    <string name="DESC_RODAPE_PRINCIPAL"> Dispositivo: # | Versão: # | Obra: #</string>
+    <string name="DESC_RODAPE_AUXILIAR">Usuário: # </string>
+
+    <string name="ORIGEM">Origem</string>
+    <string name="ORIGEM_DESTINO">Origem / Destino</string>
+    <string name="DESTINO">Destino</string>
+
+    <string name="TITLE_MNU">Menu Principal</string>
+    <string name="TITLE_LGN">Login</string>
+    <string name="TITLE_REL">Relatório de Envio</string>
+    <string name="TITLE_LCL">Minha Localização</string>
+
+    <string name="DETAIL_LOCATION">Minha Localização</string>
+    <string name="DETAIL_MOV">Movimentações Apropriadas no Dia</string>
+    <string name="DETAIL_EQP">Parte Diária de Campo</string>
+    <string name="DETAIL_CONF">Configurações do Dispositivo</string>
+    <string name="DETAIL_ABS">Abastecimento / Lubrificação</string>
+    <string name="DETAIL_ABS_LUBRIF">Detalhes da Lubrificação</string>
+    <string name="DETAIL_PRV">Prévia de Horímetros / Hodômetros</string>
+    <string name="DETAIL_VGS">Movimentações : Viagem / Equipamento</string>
+    <string name="DETAIL_EVTS">Parte Diária de Campo : Eventos / Equipamento</string>
+    <string name="DETAIL_EVTS_EQUIPAMENTO">Parte Diária de Campo : Edição de Equipamento</string>
+
+    <string name="STRING_INTENT_PARAMS">JSON</string>
+
+    <string name="TYPE_EDIT">EDIT</string>
+    <string name="TYPE_VIEW">VIEW</string>
+    <string name="TYPE_NEXT_PAGE">NEXT_PAGE</string>
+    <string name="TYPE_LIST_PAGE">LIST_PAGE</string>
+    <string name="TYPE_EDIT_PAGE">EDIT_PAGE</string>
+    <string name="TYPE_SELECT_NEW">SELECT_NEW</string>
+    <string name="TYPE_SELECT_EDIT">SELECT_EDIT</string>
+    <string name="TYPE_SELECT_VIEW">SELECT_VIEW</string>
+    <string name="TYPE_SELECT_COPY">SELECT_COPY</string>
+    <string name="TYPE_ROWNUM">ROWNUM</string>
+    <string name="TYPE_REMOVE">REMOVE</string>
+    <string name="TYPE_AUTH_REMOVE">AUTH_REMOVE</string>
+
+    <!-- Menu -->
+
+    <string name="configuracoes">Configurações</string>
+    <string name="importar_dados">Baixar Cadastros</string>
+    <string name="baixar_arquivo">Baixar Arquivo</string>
+    <string name="atualizar_banco">Atualizar Banco</string>
+    <string name="exportar_dados">Enviar Dados</string>
+    <string name="relatorio_envio">Relatório de Envio</string>
+    <string name="gerar_arquivo">Gerar Arquivo</string>
+    <string name="enviar_arquivo">Enviar Arquivo</string>
+    <string name="descarregar_informacoes">Descarregar Informações</string>
+    <string name="nova_versao">Nova Versão</string>
+    <string name="modulos">Módulos</string>
+    <string name="menu_localizacao">Localização</string>
+    <string name="parte_diaria">Parte Diária</string>
+    <string name="previa_de_horimetros">Prévia de Horimetros</string>
+    <string name="logout">Logout</string>
+
+    <string name="OPTION_MENU_MOV">MOV</string>
+    <string name="OPTION_MENU_SRV">SRV</string>
+    <string name="OPTION_MENU_MAO">MAO</string>
+    <string name="OPTION_MENU_EQP">EQP</string>
+    <string name="OPTION_MENU_PLU">PLU</string>
+    <string name="OPTION_MENU_ABS">ABS</string>
+    <string name="OPTION_MENU_MAN">MAN</string>
+
+
+    <!-- TOP HEADER - NAME COLUMNS  -->
+
+    <string name="HEADER_APONTAMENTO_INDIVIDUAL">Apontamento Individual de Frequência e Horas</string>
+    <string name="HEADER_LOCALIZACAO_EQUIPE">Controle de Frequência e Distribuição de Horas</string>
+    <string name="HEADER_COMPOSICAO_EQUIPE">Composição de Equipe</string>
+    <string name="HEADER_AJUSTE_INDIVIDUAL">Ajuste de Eventos por Integrantes de Equipe</string>
+    <string name="HEADER_ADD_INTEGRANTE_TEMP">Adicionar Integrante Temporário</string>
+    <string name="HEADER_ADD_PRODUCAO_SERVICO">Adicionar Produção dos Serviços</string>
+    <string name="HEADER_PRODUCAO_SERVICO">Produção dos Serviços</string>
+    <string name="HEADER_APROPRIACAO_SERVICO">Apropriação de Serviços Mão-de-Obra</string>
+    <string name="HEADER_INDICE_PLUVIOMETRICO">Apontamentos de Índices Pluviométricos</string>
+    <string name="HEADER_ADD_INDICE_PLUVIOMETRICO">Adicionar Índice Pluviométrico</string>
+    <string name="HEADER_ADD_EQUIPE_LOCAL">Tela de Cadastro de Equipe no Local</string>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_VEQ">
+        <item>Últimas Viagens</item>
+    </string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_EVT">
+        <item>Últimos Eventos</item>
+    </string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_VSC">
+        <item>Viagens Realizadas no dia</item>
+    </string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_ABS6">
+        <item>Lubrificações Realizadas</item></string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_ABS7">
+        <item>Saldos Iniciais / Reabastecimentos Realizados</item>
+    </string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_ABS8">
+        <item>Saldos Atuais</item>
+    </string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_ABS9">
+        <item>Últimos Equipamentos</item>
+    </string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_ESC">
+        <item>Eventos Realizados no dia</item>
+    </string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_LCL">
+        <item>Últimas Localizações</item>
+    </string-array>
+
+    <string-array name="TOP_HEADER_NAME_COLUMNS_ABS">
+        <item>Abastecimentos / Lubrificações</item>
+        <item>+</item>
+    </string-array>
+
+    <!-- HEADER / NAME COLUMNS -->
+
+    <string-array name="HEADER_NAME_COLUMNS_MOV">
+        <item>Equipamentos</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_EQP"><item>Equipamentos</item></string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_VEQ_QR_CODE">
+        <item>@string/TOKEN</item>
+        <item>Hora</item>
+        <item>Estacas</item>
+        <item>Cod. Segurança</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_VEQ">
+        <item>@string/TOKEN</item>
+        <item>Hora</item>
+        <item>Estacas</item>
+        <item>E-Ticket</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_EVT">
+        <item>@string/TOKEN</item>
+        <item>Horário</item>
+        <item>Evento</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_PFX">
+        <item>@string/EMPTY</item>
+        <item>+</item>
+        <item>@string/EMPTY</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_VSC">
+        <item> @string/prefixo</item>
+        <item>@string/TOKEN</item>
+        <item>Estaca</item>
+        <item>Horário</item>
+        <item>E-Ticket</item>
+        <item>Material</item>
+        <item>Apropriar</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS">
+        <item> @string/prefixo</item>
+        <item>Início</item>
+        <item>Término</item>
+        <item> Comb. / Lubr.</item>
+        <item>@string/EMPTY</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS2">
+        <item> Combustível / Lubrificante</item>
+        <item>Quantidade</item>
+        <item>Opções</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS3">
+        <item> Compartimento</item>
+        <item>Quant.</item>
+        <item>Observação</item>
+        <item>*</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS4">
+        <item> Combustível / Lubrificante</item>
+        <item>Quantidade</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS5">
+        <item> Preventiva</item>
+        <item>Horímetro Programado </item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS6">
+        <item> Compartimento</item>
+        <item>Hodômetro</item>
+        <item>Horímetro</item>
+        <item>Diferença </item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS7">
+    <item> Hora</item>
+        <item>Combustível / Lubrificante</item>
+        <item>Quantidade</item>
+        <item>@string/EMPTY</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS8">
+        <item> Combustível / Lubrificante</item>
+        <item>Abastecido</item>
+        <item>Saldo</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ABS9">
+        <item> @string/prefixo</item>
+        <item>Operador</item>
+        <item>H / Km</item>
+        <item>@string/EMPTY</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_ESC">
+        <item> @string/prefixo</item>
+        <item>@string/TOKEN</item>
+        <item>Evento</item>
+        <item>Horário</item>
+        <item>Apropriar</item>
+    </string-array>
+
+    <string-array name="HEADER_NAME_COLUMNS_LCL">
+        <item> Hora</item>
+        <item>Descrição</item>
+        <item>Tipo</item>
+    </string-array>
+
+    <string-array name="E_TICKET_SPINNER">
+        <item>Destino</item>
+        <item>Origem</item>
+    </string-array>
+
+    <array name="filtrosBuscaMovimentacao">
+        <item>Prefixo</item>
+        <item>Estaca</item>
+        <item>Material</item>
+    </array>
+
+</resources>

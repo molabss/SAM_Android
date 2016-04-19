@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/layoutDetailEvtEqp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </TableLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableTela"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TableRow
+                android:id="@+id/newRowTela"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableHeaderPfx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <ScrollView
+                            android:id="@+id/scrollViewPfx"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="top"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:scrollbarStyle="insideOverlay" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="top"
+                                android:orientation="vertical" >
+
+                                <TableLayout
+                                    android:id="@+id/tableGridPfx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent" />
+
+                                <TableLayout
+                                    android:id="@+id/tableFooterPfx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top|right"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/BLACK"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableHeaderEvtEqp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <TableRow
+                                android:id="@+id/newHeaderEvtEqp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/EvtEqpViewEqp"
+                                    android:layout_width="400dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textColor="@color/WHITE"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableEvtEqp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="top" >
+
+                            <TableRow
+                                android:id="@+id/tbRwEvtSrvc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblServico"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/servico"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/EvtEqpCmbSrvc"
+                                        android:layout_width="245dp"
+                                        android:layout_height="45dp"
+                                        android:completionThreshold="1"
+                                        android:hint="@string/hint_selecione"
+                                        android:dropDownWidth="500dp"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/EvtEqpViewSrvc"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text=""
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwEvtParal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblParalisacao"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/paralisacao"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <Spinner
+                                        android:id="@+id/EvtEqpSpnParal"
+                                        android:layout_width="250dp"
+                                        android:layout_height="45dp"
+                                        android:textSize="18sp" />	
+                          
+                                    <TextView
+                                        android:id="@+id/EvtEqpViewParalisacao"
+                                        android:layout_width="250dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text=""
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwEvtParal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblComponente"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/componente"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/EvtEqpCmbComp"
+                                        android:layout_width="245dp"
+                                        android:layout_height="45dp"
+                                        android:hint="@string/hint_selecione"
+                                        android:completionThreshold="1"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/EvtEqpViewComp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text=""
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwEvtEqp3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblHEvt"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/hora_evento"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <EditText
+                                        android:id="@+id/eqpEditHorIni"
+                                        android:layout_width="70dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center"
+                                        android:inputType="number|none"
+                                        android:maxLength="2"
+                                        android:paddingRight="10dp"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/twoDots"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="@string/dois_pontos"
+                                        android:textSize="20sp" />
+
+                                    <EditText
+                                        android:id="@+id/eqpEditMinIni"
+                                        android:layout_width="70dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center"
+                                        android:inputType="number|none"
+                                        android:maxLength="2"
+                                        android:paddingRight="10dp"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/horaView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwEvtEqp2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblHEvt2"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/hora_termino"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <EditText
+                                        android:id="@+id/eqpEditHorFim"
+                                        android:layout_width="70dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center"
+                                        android:inputType="number|none"
+                                        android:maxLength="2"
+                                        android:paddingRight="10dp"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/twoDots2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="@string/dois_pontos"
+                                        android:textSize="20sp" />
+
+                                    <EditText
+                                        android:id="@+id/eqpEditMinFim"
+                                        android:layout_width="70dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center"
+                                        android:inputType="number|none"
+                                        android:maxLength="2"
+                                        android:paddingRight="10dp"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwEvtEqp4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblEstcI"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/estaca"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="250dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <EditText
+                                            android:id="@+id/EvtEqpEditEstaca"
+                                            android:layout_width="100dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:inputType="number|none"
+                                            android:maxLength="6"
+                                            android:textSize="18sp" />
+
+                                        <CheckBox
+                                            android:id="@+id/EvtEqpChkApropriar"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/apropriar" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwEvtEqpObs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblObs"
+                                        android:layout_width="150dp"
+                                        android:layout_height="80dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/observacoes"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="250dp"
+                                        android:layout_height="80dp"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <EditText
+                                            android:id="@+id/EvtEqpEditObs"
+                                            android:layout_width="250dp"
+                                            android:layout_height="80dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="center_vertical"
+                                            android:maxLength="100"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableFooterEvtEqp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="385dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="top"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingTop="5dp" >
+
+                            <Button
+                                android:id="@+id/btEvtEqpNew"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/novo" />
+
+                            <Button
+                                android:id="@+id/btEvtEqpSave"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/salvar" />
+
+                            <Button
+                                android:id="@+id/btEvtEqpCancel"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cancelar" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:orientation="vertical" >
+
+                            <!--<ScrollView-->
+                                <!--android:id="@+id/scrollViewEvt"-->
+                                <!--android:layout_width="fill_parent"-->
+                                <!--android:layout_height="fill_parent"-->
+                                <!--android:layout_gravity="top"-->
+                                <!--android:layout_marginBottom="10dp"-->
+                                <!--android:gravity="top"-->
+                                <!--android:scrollbarAlwaysDrawVerticalTrack="true" >-->
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="top"
+                                    android:orientation="vertical" >
+
+                                    <TableLayout
+                                        android:id="@+id/tableHeaderEvtTop"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TableLayout
+                                        android:id="@+id/tableHeaderEvt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <ScrollView
+                                    android:id="@+id/scrollViewEvt"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_gravity="top"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="top"
+                                    android:scrollbarAlwaysDrawVerticalTrack="true" >
+                                        <TableLayout
+                                                android:id="@+id/tableGridEvt"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                    </ScrollView>
+
+                                    <TableLayout
+                                        android:id="@+id/tableFooterEvt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            <!--</ScrollView>-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</FrameLayout>

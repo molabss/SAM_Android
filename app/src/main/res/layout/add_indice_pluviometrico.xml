@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginLeft="25dp"
+              android:layout_marginRight="25dp"
+              android:layout_marginTop="25dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp">
+
+        <!-- Cabeçalho -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/BLACK"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:text="@string/HEADER_ADD_INDICE_PLUVIOMETRICO"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:id="@+id/cabecalhoTextView"/>
+
+        </LinearLayout>
+
+        <!-- Linha Data -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/data_hora"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/equipeCol"/>
+
+            <TextView
+                    android:id="@+id/dataHoraTextView"
+                    android:layout_width="380dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Linha Estacas -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/estacas"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/estacasTextView"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/DARK_GRAY"
+                    android:orientation="horizontal" >
+
+                <EditText
+                        android:id="@+id/estacaInicialEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:inputType="number|none"
+                        android:maxLength="6"
+                        android:paddingRight="10dp"
+                        android:textSize="20sp" />
+
+                <EditText
+                        android:id="@+id/estacaFinalEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:inputType="number|none"
+                        android:maxLength="6"
+                        android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Linha Pluviometro -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/pluviometro"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/pluviometroTextView"/>
+
+            <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:maxLength="20"
+                    android:id="@+id/pluviometroEditText"/>
+        </LinearLayout>
+
+        <!-- Linha Pluviometro -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/volumeChuva"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/volumeChuvaTextView"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/DARK_GRAY"
+                    android:orientation="horizontal" >
+
+                <EditText
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:inputType="number"
+                        android:textSize="20sp"
+                        android:maxLength="5"
+                        android:id="@+id/volumeChuvaEditText"/>
+
+                <TextView
+                        android:id="@+id/medidaTextView"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/unidade_medida_mm"
+                        android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+            <Button
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="@string/cancelar"
+                    android:id="@+id/btnCancelar"/>
+
+            <Button
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="@string/salvar"
+                    android:id="@+id/btnSalvar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

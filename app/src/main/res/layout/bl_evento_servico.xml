@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+        <!-- Linha Evento - Cabecalho -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/BLACK"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/evento"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:id="@+id/localizacaoTextView"/>
+
+            <ImageView
+                    android:id="@+id/saveEventoImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/save1"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="20sp" />
+
+            <Button
+                    android:id="@+id/btnAddEvento"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Linha Tipo Apontamento -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/apontam"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/categoriaTextView"/>
+
+            <RadioGroup
+                    android:id="@+id/tipoApontamentoRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                <RadioButton
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/manual"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20sp"
+                        android:checked="false"
+                        android:id="@+id/manualRadio"/>
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/automatico"
+                        android:textSize="20sp"
+                        android:checked="true"
+                        android:id="@+id/automaticoRadio"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- Linha Tipo Evento -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/tipo_evento"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/tipoEventoTextView"/>
+
+            <AutoCompleteTextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tipoEventoAutoComplete"
+                    android:hint="@string/hint_selecione"
+                    android:completionThreshold="1"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- Linha Serviço -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/servico"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/servicoTextView"/>
+
+            <AutoCompleteTextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_selecione"
+                    android:completionThreshold="1"
+                    android:id="@+id/servicoAutoComplete"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- Linha Hora Inicio -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout6"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/hora_inicio"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/horaIniTextView"/>
+
+            <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:maxLength="5"
+                    android:id="@+id/horaIniEditText"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/hora_termino"
+                    android:textSize="20sp"
+                    android:id="@+id/horaFimTextView"/>
+
+            <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:maxLength="5"
+                    android:id="@+id/horaFimEditText"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout7"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/observacoes"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/obsTextView"/>
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:id="@+id/obsEditText"
+                    />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

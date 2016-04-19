@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:layout_marginTop="25dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Linha 1 - Cabecalho -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/BLACK">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/historico_eventos"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:id="@+id/localizacaoTextView"/>
+
+            <Button
+                    android:id="@+id/btnViewEquipe"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/form"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/GRAY2">
+        <TextView
+                android:id="@+id/horarioText"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:textColor="@color/WHITE"
+                android:text="@string/horario"/>
+
+        <TextView
+                android:id="@+id/eventoText"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:gravity="center|left"
+                android:textColor="@color/WHITE"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="@string/evento" />
+
+    </LinearLayout>
+
+    <!-- Texto exibido quando grid estiver vazia -->
+    <TextView
+            android:id="@+id/empty_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/grid_vazio"
+            android:background="@color/DARK_GRAY"
+            android:visibility="gone" />
+
+    <GridView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:id="@+id/eventoEquipeGridView"/>
+
+</LinearLayout>

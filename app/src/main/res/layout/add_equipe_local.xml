@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:layout_marginLeft="25dp"
+              android:layout_marginRight="25dp">
+
+    <include layout="@layout/bl_localizacao_equipe_simples"/>
+
+    <include layout="@layout/bl_listar_equipe"/>
+
+</LinearLayout>

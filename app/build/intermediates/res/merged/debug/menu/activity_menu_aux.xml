@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  
+  <item
+        android:id="@+id/mov"
+        android:title="@string/movimentacoes"/>
+    <item
+        android:id="@+id/eqp"
+        android:title="@string/parte_diaria"/>
+ 	<item
+        android:id="@+id/abs"
+        android:title="@string/abastecimentos"/>
+    <item
+        android:id="@+id/mao"
+        android:title="@string/mao_de_obra"/>
+ 	<item
+        android:id="@+id/absTemp"
+        android:title="@string/previa_de_horimetros"/>
+    <item
+        android:id="@+id/plu"
+        android:title="@string/indicePluviometrico"/>
+    <item
+        android:id="@+id/local"
+        android:title="@string/menu_localizacao"/>
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"/>
+    
+</menu>

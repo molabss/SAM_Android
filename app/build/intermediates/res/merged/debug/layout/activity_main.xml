@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:id="@+id/tableRow0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo_sam"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:text="@string/movimentacoes"
+                android:textColor="@color/WHITE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonMovimentacoes"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:drawableTop="@drawable/menu_movimentacao_bc"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/movimentacoes"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons"
+                    android:textColor="@color/md_white_1000"/>
+
+                <!-- PARA QUANDO MODULO ESTIVER DESATIVADO!-->
+                <Button
+                    android:id="@+id/buttonMovimentacoes_destivado"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:drawableTop="@drawable/menu_movimentacao_bc"
+                    android:layout_marginBottom="60dp"
+                    android:text="@string/movimentacoes"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons_desativado"
+                    android:visibility="gone"
+                    android:textColor="@color/md_white_1000"/>
+                <!--************************************** !-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonEquipamentos"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:layout_marginBottom="60dp"
+                    android:drawableTop="@drawable/menu_equipamentos_bc"
+                    android:text="@string/equipamentos"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons"
+                    android:textColor="@color/md_white_1000"/>
+
+                <!-- PARA QUANDO MODULO ESTIVER DESATIVADO!-->
+                <Button
+                    android:id="@+id/buttonEquipamentos_desativado"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:layout_marginBottom="60dp"
+                    android:drawableTop="@drawable/menu_equipamentos_bc"
+                    android:text="@string/equipamentos"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons_desativado"
+                    android:visibility="gone"
+                    android:textColor="@color/md_white_1000"/>
+                <!--************************************** !-->
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonMaoObra"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:layout_marginBottom="60dp"
+                    android:drawableTop="@drawable/menu_maodeobra_bc"
+                    android:text="@string/mao_obra"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons"
+                    android:textColor="@color/md_white_1000"
+                    />
+
+                <Button
+                    android:id="@+id/buttonMaoObra_desativado"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:layout_marginBottom="60dp"
+                    android:drawableTop="@drawable/menu_maodeobra_bc"
+                    android:text="@string/mao_obra"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons_desativado"
+                    android:visibility="gone"
+                    android:textColor="@color/WHITE"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonAbastecimento"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:layout_marginBottom="60dp"
+                    android:drawableTop="@drawable/menu_abastecimento_bc"
+                    android:text="@string/abastecimentos"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons"
+                    android:textColor="@color/md_white_1000"/>
+
+                <!-- PARA QUANDO MODULO ESTIVER DESATIVADO!-->
+                <Button
+                    android:id="@+id/buttonAbastecimento_desativado"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:layout_marginBottom="60dp"
+                    android:drawableTop="@drawable/menu_abastecimento_bc"
+                    android:text="@string/abastecimentos"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons_desativado"
+                    android:visibility="gone"
+                    android:textColor="@color/md_white_1000"/>
+                <!--************************************** !-->
+
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonIndicePluviometrico"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:drawableTop="@drawable/menu_indicepluviometrico_bc"
+                    android:text="@string/indicePluviometrico"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons"
+                    android:textColor="@color/md_white_1000"
+                    />
+
+
+
+                <!-- PARA QUANDO MODULO ESTIVER DESATIVADO!-->
+                <Button
+                    android:id="@+id/buttonIndicePluviometrico_desativado"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:drawableTop="@drawable/menu_indicepluviometrico_bc"
+                    android:text="@string/indicePluviometrico"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:background="@drawable/menu_buttons_desativado"
+                    android:textColor="@color/md_white_1000"/>
+                <!--************************************** !-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonManutencoes"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:drawableTop="@drawable/menu_servicos_bc"
+                    android:text="@string/manutencoes"
+                    android:textStyle="bold"
+                    android:background="@drawable/menu_buttons"
+                    android:textColor="@color/md_white_1000"/>
+
+                <!-- PARA QUANDO MODULO ESTIVER DESATIVADO!-->
+                <Button
+                    android:id="@+id/buttonManutencoes_desativado"
+                    android:layout_width="215dp"
+                    android:layout_height="180dp"
+                    android:drawablePadding="-15sp"
+                    android:drawableTop="@drawable/menu_servicos_bc"
+                    android:text="@string/manutencoes"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:background="@drawable/menu_buttons_desativado"
+                    android:textColor="@color/md_white_1000"/>
+                <!--************************************** !-->
+
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Rodapé -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/descRodape"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/BLACK"
+            android:textSize="20sp"
+            android:text="T00 | VERSÃO: 00.00.00 | OBRA: 000000"/>
+
+        <TextView
+            android:id="@+id/descVersao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/BLACK"
+            android:textSize="20sp"
+            android:text="USUÁRIO"/>
+
+        <TextView
+            android:id="@+id/descServidor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/BLACK"
+            android:textSize="20sp"
+            android:text="IP SERVIDOR"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Linha Evento - Cabecalho -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/BLACK"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/HEADER_PRODUCAO_SERVICO"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:id="@+id/localizacaoTextView"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/GRAY2">
+
+            <TextView
+                    android:id="@+id/horarioHeader"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:textSize="20sp"
+                    android:textColor="@color/WHITE"
+                    android:text="@string/horario" />
+
+            <TextView
+                    android:id="@+id/servicoHeader"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textColor="@color/WHITE"
+                    android:text="@string/servico"/>
+
+            <TextView
+                    android:id="@+id/producaoHeader"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:textSize="20sp"
+                    android:textColor="@color/WHITE"
+                    android:text="@string/producao_header" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Texto exibido quando grid estiver vazia -->
+    <TextView
+            android:id="@+id/empty_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/grid_vazio"
+            android:background="@color/DARK_GRAY"
+            android:visibility="gone" />
+
+    <GridView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/servicoProducaoGridView"/>
+
+</LinearLayout>

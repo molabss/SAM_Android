@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/DARK_GRAY"
+              android:gravity="center|left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/horarioText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:text="@string/integrante"/>
+
+    <TextView
+            android:id="@+id/eventoText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/matricula" />
+
+    <ImageView
+            android:id="@+id/editarImage"
+            android:src="@drawable/form"
+            android:contentDescription="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+</LinearLayout>

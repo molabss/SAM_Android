@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/layoutDetailVgsEqp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </TableLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableTela"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TableRow
+                android:id="@+id/newRowTela"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableHeaderPfx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <ScrollView
+                            android:id="@+id/scrollViewPfx"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="top"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:scrollbarStyle="insideOverlay" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="top"
+                                android:orientation="vertical" >
+
+                                <TableLayout
+                                    android:id="@+id/tableGridPfx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent" />
+
+                                <TableLayout
+                                    android:id="@+id/tableFooterPfx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top|right"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/BLACK"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableHeaderVgsEqp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <TableRow
+                                android:id="@+id/newHeaderVgsEqp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/VgsEqpViewEqp"
+                                    android:layout_width="400dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textColor="@color/WHITE"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableVgsEqp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="top" >
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqpCrg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblEqpCrg"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/equipamentoCarga"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <AutoCompleteTextView
+                                        android:id="@+id/VgsEqpCmbEqpCrg"
+                                        android:layout_width="220dp"
+                                        android:hint="@string/hint_selecione"
+                                        android:layout_height="45dp"
+                                        android:completionThreshold="1"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/VgsEqpViewEqpCrg"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text=""
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqp6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblMat"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/material"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <Spinner
+                                        android:id="@+id/VgsEqpCmbMat"
+                                        android:layout_width="250dp"
+                                        android:layout_height="45dp"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:id="@+id/VgsEqpViewMat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text=""
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqp3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblHVgs"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/hora_viagem"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <EditText
+                                        android:id="@+id/vgsEditHorIni"
+                                        android:layout_width="50dp"
+                                        android:layout_height="45dp"
+                                        android:inputType="number|none"
+                                        android:maxLength="2"
+                                        android:paddingRight="10dp"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/twoDots"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="@string/dois_pontos"
+                                        android:textSize="20sp" />
+
+                                    <EditText
+                                        android:id="@+id/vgsEditMinIni"
+                                        android:layout_width="50dp"
+                                        android:layout_height="45dp"
+                                        android:inputType="number|none"
+                                        android:maxLength="2"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/horaView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqp9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblHorim"
+                                        android:layout_width="150dp"
+                                        android:layout_height="30dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text=""
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="250dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <!--<CheckBox-->
+                                            <!--android:id="@+id/VgsEqpChkViravira"-->
+                                            <!--android:layout_width="wrap_content"-->
+                                            <!--android:layout_height="wrap_content"-->
+                                            <!--android:text="@string/viravira" />-->
+
+                                        <CheckBox
+                                            android:id="@+id/VgsEqpChkApropriar"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/apropriar" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqpPso"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblPeso"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/peso"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="250dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <EditText
+                                            android:id="@+id/VgsEqpEditPeso"
+                                            android:layout_width="100dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:inputType="numberDecimal"
+                                            android:maxLength="9"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqp4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblEstcI"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/estacas"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="250dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <EditText
+                                            android:id="@+id/VgsEqpEditEstacaIni"
+                                            android:layout_width="100dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:inputType="number|none"
+                                            android:maxLength="6"
+                                            android:textSize="18sp" />
+
+                                        <EditText
+                                            android:id="@+id/VgsEqpEditEstacaFim"
+                                            android:layout_width="100dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:inputType="number|number"
+                                            android:maxLength="6"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqp0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblPrc"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/percentual_carga"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="250dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <EditText
+                                            android:id="@+id/VgsEqpEditPrcCrg"
+                                            android:layout_width="100dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:inputType="number|none"
+                                            android:maxLength="3"
+                                            android:textSize="18sp" >
+
+                                            <requestFocus />
+                                        </EditText>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow
+                                    android:id="@+id/tbRwVgsEqpHorimetro"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top" >
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="top"
+                                        android:background="@color/GRAY2"
+                                        android:orientation="horizontal" >
+
+                                    <TextView
+                                            android:id="@+id/lblHorimetro"
+                                            android:layout_width="150dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:text="@string/horimetro"
+                                            android:textColor="@color/WHITE"
+                                            android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                            android:layout_width="250dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="top"
+                                            android:background="@color/DARK_GRAY"
+                                            android:orientation="horizontal" >
+
+                                        <EditText
+                                                android:id="@+id/VgsEqpEditHorimetro"
+                                                android:layout_width="100dp"
+                                                android:layout_height="45dp"
+                                                android:layout_gravity="center_vertical"
+                                                android:inputType="number|none"
+                                                android:maxLength="10"
+                                                android:textSize="18sp" >
+
+                                            <requestFocus />
+                                        </EditText>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                    android:id="@+id/tbRwVgsEqpHodometro"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top" >
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="top"
+                                        android:background="@color/GRAY2"
+                                        android:orientation="horizontal" >
+
+                                    <TextView
+                                            android:id="@+id/lblHodometro"
+                                            android:layout_width="150dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:text="@string/hodometro"
+                                            android:textColor="@color/WHITE"
+                                            android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                            android:layout_width="250dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="top"
+                                            android:background="@color/DARK_GRAY"
+                                            android:orientation="horizontal" >
+
+                                        <EditText
+                                                android:id="@+id/VgsEqpEditHodometro"
+                                                android:layout_width="100dp"
+                                                android:layout_height="45dp"
+                                                android:layout_gravity="center_vertical"
+                                                android:inputType="number|none"
+                                                android:maxLength="10"
+                                                android:textSize="18sp" >
+
+                                            <requestFocus />
+                                        </EditText>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqpTp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblTp"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/tipo"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <RadioGroup
+                                            android:id="@+id/VgsEqpRadioGroupTipo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal" >
+
+                                            <RadioButton
+                                                android:id="@+id/radioOrg"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:checked="true"
+                                                android:text="@string/origem" />
+
+                                            <RadioButton
+                                                android:id="@+id/radioDst"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/destino" />
+                                        </RadioGroup>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqpEticket"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblTckt"
+                                        android:layout_width="150dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/eticket"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="250dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <EditText
+                                            android:id="@+id/VgsEqpEditEticket"
+                                            android:layout_width="100dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:maxLength="10"
+                                            android:textSize="18sp"
+                                            android:width="100dp" />
+
+                                        <TextView
+                                            android:id="@+id/VgsEqpViewNVale"
+                                            android:layout_width="0dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:text=""
+                                            android:textColor="@color/BLACK"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/tbRwVgsEqpObs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/lblObs"
+                                        android:layout_width="150dp"
+                                        android:layout_height="80dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/observacoes"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="top"
+                                    android:background="@color/DARK_GRAY"
+                                    android:orientation="horizontal" >
+
+                                    <LinearLayout
+                                        android:layout_width="250dp"
+                                        android:layout_height="80dp"
+                                        android:layout_gravity="top"
+                                        android:background="@color/DARK_GRAY"
+                                        android:orientation="horizontal" >
+
+                                        <EditText
+                                            android:id="@+id/VgsEqpEditObs"
+                                            android:layout_width="250dp"
+                                            android:layout_height="80dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:gravity="center_vertical"
+                                            android:maxLength="100"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableFooterVgsEqp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="385dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="top"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingTop="5dp" >
+
+                            <Button
+                                android:id="@+id/btVgsEqpNew"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/novo" />
+
+                            <Button
+                                android:id="@+id/btVgsEqpSave"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/salvar" />
+
+                            <Button
+                                android:id="@+id/btVgsEqpCancel"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cancelar" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:orientation="vertical" >
+
+                            <ScrollView
+                                android:id="@+id/scrollViewVeq"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="top"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="top"
+                                android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="top"
+                                    android:orientation="vertical" >
+
+                                    <TableLayout
+                                        android:id="@+id/tableHeaderVeqTop"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TableLayout
+                                        android:id="@+id/tableHeaderVeq"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TableLayout
+                                        android:id="@+id/tableGridVeq"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TableLayout
+                                        android:id="@+id/tableFooterVeq"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </ScrollView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:layout_marginTop="25dp"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Linha 1 - Cabecalho -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/BLACK"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/HEADER_APROPRIACAO_SERVICO"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:id="@+id/eventoTopHeader"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/GRAY2">
+        <TextView
+                android:id="@+id/eventoHeader"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:textColor="@color/WHITE"
+                android:text="@string/dados"/>
+
+        <TextView
+                android:id="@+id/equipeHeader"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:textColor="@color/WHITE"
+                android:text="@string/equipe" />
+
+        <TextView
+                android:id="@+id/localizacaoHeader"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/WHITE"
+                android:text="@string/localizacao_col" />
+
+    </LinearLayout>
+
+    <!-- Texto exibido quando grid estiver vazia -->
+    <TextView
+            android:id="@+id/empty_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/grid_vazio"
+            android:background="@color/DARK_GRAY"
+            android:visibility="gone" />
+
+    <GridView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/apropriacaoServicoGridView"/>
+
+</LinearLayout>

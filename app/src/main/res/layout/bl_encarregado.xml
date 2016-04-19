@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!-- Linha Encarregado -->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@color/DARK_GRAY"
+            android:layout_weight="1">
+
+        <TextView
+                android:layout_width="130dp"
+                android:layout_height="55dp"
+                android:paddingLeft="10dp"
+                android:text="@string/encarregado"
+                android:textColor="@color/WHITE"
+                android:gravity="center|left"
+                android:background="@color/GRAY2"
+                android:textSize="20sp"
+                android:id="@+id/encarregadoCol"/>
+
+        <AutoCompleteTextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/encarregadoAutoComplete"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- Linha SMSMT -->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/DARK_GRAY"
+            android:layout_weight="1">
+
+        <TextView
+                android:layout_width="130dp"
+                android:layout_height="55dp"
+                android:paddingLeft="10dp"
+                android:text="@string/smsmt"
+                android:textColor="@color/WHITE"
+                android:gravity="center|left"
+                android:background="@color/GRAY2"
+                android:textSize="20sp"
+                android:id="@+id/smsmtCol"/>
+
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/producao"
+                android:gravity="center|right"
+                android:id="@+id/smsmtEditText"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

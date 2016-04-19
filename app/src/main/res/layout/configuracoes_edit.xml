@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@color/WHITE"
+             android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TableLayout
+                    android:id="@+id/layoutDetailEditConf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+        <ScrollView
+                android:id="@+id/scrollViewConfFull"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="550dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@color/BLACK"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TableLayout
+                            android:id="@+id/tableHeaderConf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent">
+
+                        <TableRow
+                                android:id="@+id/newHeaderConf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/columnHeaderConf"
+                                    android:layout_width="550dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/configTablet"
+                                    android:textColor="@color/WHITE"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"/>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TableLayout
+                            android:id="@+id/tableConf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                        <TableRow
+                                android:id="@+id/tbRwConf4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblCCObra"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/cc_obra"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <LinearLayout
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/DARK_GRAY"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:orientation="horizontal"
+                                        android:baselineAligned="false">
+
+                                    <EditText
+                                            android:id="@+id/ConfViewCCObra"
+                                            android:layout_width="170dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:cacheColorHint="@color/TRANSPARENT"
+                                            android:inputType="number"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="20sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblCCObra2"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/cc_obra2"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <LinearLayout
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/DARK_GRAY"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:orientation="horizontal">
+
+                                    <EditText
+                                            android:id="@+id/ConfViewCCObra2"
+                                            android:layout_width="170dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:inputType="number"
+                                            android:paddingLeft="10dp"
+                                            android:cacheColorHint="@color/TRANSPARENT"
+                                            android:textSize="20sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblUsr"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/usuario"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <AutoCompleteTextView
+                                        android:id="@+id/ConfViewUsr"
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:hint="@string/hint_selecione"
+                                        android:completionThreshold="1"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:dropDownWidth="500dp"
+                                        android:textSize="18sp"/>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblPst"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/posto"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <AutoCompleteTextView
+                                        android:id="@+id/ConfViewPst"
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:hint="@string/hint_selecione"
+                                        android:completionThreshold="1"
+                                        android:dropDownWidth="500dp"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:textSize="18sp"/>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblEt"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/gera_vale"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <Spinner
+                                        android:id="@+id/ConfViewEticket"
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:entries="@array/E_TICKET_SPINNER"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@color/BLACK"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblTablet"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/dispositivo"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <EditText
+                                        android:id="@+id/ConfViewTablet"
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text=""
+                                        android:textColor="@color/BLACK"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblServ"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/server"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <EditText
+                                        android:id="@+id/ConfViewSrv"
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text=""
+                                        android:textColor="@color/BLACK"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf0902"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblPFtp"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/portaftp"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <LinearLayout
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/DARK_GRAY"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:orientation="horizontal">
+
+                                    <EditText
+                                            android:id="@+id/ConfViewPFtp"
+                                            android:layout_width="170dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:inputType="number"
+                                            android:paddingLeft="10dp"
+                                            android:cacheColorHint="@color/TRANSPARENT"
+                                            android:textSize="20sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf0903"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblPWeb"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/portaweb"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <LinearLayout
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/DARK_GRAY"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:orientation="horizontal">
+
+                                    <EditText
+                                            android:id="@+id/ConfViewPWeb"
+                                            android:layout_width="170dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:inputType="number"
+                                            android:paddingLeft="10dp"
+                                            android:cacheColorHint="@color/TRANSPARENT"
+                                            android:textSize="20sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf0904"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblTol"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/tolerancia"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <LinearLayout
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/DARK_GRAY"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:orientation="horizontal">
+
+                                    <EditText
+                                            android:id="@+id/ConfViewTol"
+                                            android:layout_width="170dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:inputType="number"
+                                            android:paddingLeft="10dp"
+                                            android:cacheColorHint="@color/TRANSPARENT"
+                                            android:textSize="20sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf0940"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblDur"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/duracao"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <LinearLayout
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/DARK_GRAY"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:orientation="horizontal">
+
+                                    <EditText
+                                            android:id="@+id/ConfViewDur"
+                                            android:layout_width="100dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:inputType="numberDecimal"
+                                            android:maxLength="4"
+                                            android:paddingLeft="10dp"
+                                            android:cacheColorHint="@color/TRANSPARENT"
+                                            android:textSize="20sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <TableRow
+                                android:id="@+id/tbRwConf0905"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            <LinearLayout
+                                    android:id="@+id/headerLinearLayout12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/GRAY2"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/lblRef"
+                                        android:layout_width="170dp"
+                                        android:layout_height="45dp"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="10dp"
+                                        android:text="@string/referencia"
+                                        android:textColor="@color/WHITE"
+                                        android:textSize="20sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/contentLinearLayout12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@color/DARK_GRAY"
+                                    android:cacheColorHint="@color/TRANSPARENT"
+                                    android:orientation="horizontal">
+
+                                <LinearLayout
+                                        android:layout_width="380dp"
+                                        android:layout_height="45dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/DARK_GRAY"
+                                        android:cacheColorHint="@color/TRANSPARENT"
+                                        android:orientation="horizontal">
+
+                                    <EditText
+                                            android:id="@+id/ConfViewRef"
+                                            android:layout_width="170dp"
+                                            android:layout_height="45dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:cacheColorHint="@color/TRANSPARENT"
+                                            android:textSize="20sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+                    <!--<TableRow-->
+                    <!--android:id="@+id/tbRwConfHodHor"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center" >-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:background="@color/GRAY2"-->
+                    <!--android:orientation="horizontal" >-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/lblRef"-->
+                    <!--android:layout_width="500dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="@string/EXIBIR_HOD_HOR_MOVIMENTACAO"-->
+                    <!--android:textColor="@color/WHITE"-->
+                    <!--android:textSize="20sp" />-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:background="@color/DARK_GRAY"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<CheckBox android:id="@+id/chkHodHor"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:textSize="20sp"/>-->
+                    <!--</LinearLayout>-->
+                    <!--</TableRow>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TableLayout
+                            android:id="@+id/tableFooterConf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingTop="20dp">
+
+                        <Button
+                                android:id="@+id/btConfSave"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/atualizar"/>
+
+                        <Button
+                                android:id="@+id/btConfCancel"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cancelar"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

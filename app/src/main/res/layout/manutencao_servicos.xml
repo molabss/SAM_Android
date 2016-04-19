@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/WHITE">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_marginLeft="25dp"
+                  android:layout_marginRight="25dp"
+                  android:layout_marginTop="25dp"
+                  android:orientation="vertical"
+                  android:background="@color/WHITE">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BLACK"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/manSer_tvEquipamentoDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:textColor="@color/WHITE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                                        />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+        <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="top" >
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top" >
+
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+
+
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textColor="@color/BLACK"
+                            android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top" >
+
+
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+
+                    <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textColor="@color/BLACK"
+                            android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top"
+                    android:background="@color/DARK_GRAY">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/GRAY2"
+                        android:orientation="horizontal" >
+
+                    <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Hora Início"
+                            android:textColor="@color/WHITE"
+                            android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/manSer_etHoraInicio"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:inputType="number|none"
+                            android:maxLength="2"
+                            android:paddingRight="10dp"
+                            android:textSize="20sp"
+                            android:enabled="false"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/dois_pontos"
+                            android:textSize="20sp" />
+
+                    <EditText
+                            android:id="@+id/manSer_etMinutoInicio"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:inputType="number|none"
+                            android:maxLength="2"
+                            android:textSize="20sp"
+                            android:enabled="false"/>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top" >
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                    android:id="@+id/man_rowHorimetro"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/DARK_GRAY">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/GRAY2"
+                        android:orientation="horizontal" >
+
+                    <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Serviço"
+                            android:textColor="@color/WHITE"
+                            android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+
+                    <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                        <requestFocus />
+                        <Spinner
+                                android:id="@+id/manSer_spnServicos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:enabled="false"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/DARK_GRAY">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/GRAY2"
+                        android:orientation="horizontal" >
+
+                    <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Hora Término"
+                            android:textColor="@color/WHITE"
+                            android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/manSer_etHoraTermino"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:inputType="number|none"
+                            android:maxLength="2"
+                            android:paddingRight="10dp"
+                            android:textSize="20sp"
+                            android:enabled="false"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/dois_pontos"
+                            android:textSize="20sp" />
+
+                    <EditText
+                            android:id="@+id/manSer_etMinutoTermino"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:inputType="number|none"
+                            android:maxLength="2"
+                            android:textSize="20sp"
+                            android:enabled="false"/>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/GRAY2"
+                        android:orientation="horizontal" >
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top" >
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/GRAY2"
+                        android:orientation="horizontal" >
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/DARK_GRAY">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/GRAY2"
+                        android:orientation="horizontal" >
+
+                    <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="@string/observacoes"
+                            android:textColor="@color/WHITE"
+                            android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY"
+                        android:orientation="horizontal" >
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="80dp"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                        <EditText
+                                android:id="@+id/manSer_etObservacao"
+                                android:layout_width="fill_parent"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:maxLength="100"
+                                android:textSize="18sp"
+                                android:enabled="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+        <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp" >
+
+            <Button
+                    android:id="@+id/manSer_btnNovo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/novo" />
+
+            <Button
+                    android:id="@+id/manSer_btnSalvar"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salvar" />
+
+            <Button
+                    android:id="@+id/manSer_btnExcluir"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/excluir" />
+
+            <Button
+                    android:id="@+id/manSer_btnCancelar"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancelar" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="45dp" android:background="@color/BLACK"
+                  android:layout_marginTop="5dp">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@color/WHITE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Últimas Manutenções"/>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/GRAY">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Início"
+                android:textStyle="bold"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="left|center"
+                android:textColor="@color/WHITE"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+        
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Término"
+                android:textStyle="bold"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="left|center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/WHITE"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serviço"
+                android:textStyle="bold"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_gravity="left|center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/WHITE"/>
+    </GridLayout>
+
+
+        <ScrollView
+            android:id="@+id/manSer_scvListaServicos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+    <GridLayout
+            android:id="@+id/manSer_gridLayCadaServico"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+<!--
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00"
+                android:textStyle="bold"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="left|center"
+                android:textSize="18sp"
+                android:textColor="@color/BLACK"
+                android:paddingRight="5dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00"
+                android:textStyle="bold"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="left|center"
+                android:textSize="18sp"
+                android:textColor="@color/BLACK"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lavagem"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_gravity="left|center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        <Button
+                android:layout_gravity="right"
+                android:background="@drawable/edit">
+        </Button>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00"
+                android:textStyle="bold"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="left|center"
+                android:textSize="18sp"
+                android:textColor="@color/BLACK"
+                android:paddingRight="5dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00"
+                android:textStyle="bold"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_gravity="left|center"
+                android:textSize="18sp"
+                android:textColor="@color/BLACK"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lavagem"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_gravity="left|center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+        <Button
+                android:layout_gravity="right"
+                android:background="@drawable/edit">
+        </Button>
+!-->
+
+        </GridLayout>
+
+        </ScrollView>
+            <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="8dp"
+                      android:background="@color/BLACK"
+                      android:layout_marginTop="5dp">
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>

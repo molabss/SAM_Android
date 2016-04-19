@@ -1,0 +1,71 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+            android:id="@+id/importa"
+            android:title="@string/importar_dados">
+    </item>
+
+    <item
+            android:id="@+id/exporta"
+            android:title="@string/exportar_dados">
+    </item>
+
+    <item
+            android:id="@+id/relatorio"
+            android:title="@string/relatorio_envio">
+    </item>
+
+    <item
+        android:id="@+id/config"
+        android:title="@string/configuracoes">
+        <menu>
+            <!--
+            <item
+                android:id="@+id/importa"
+                android:title="@string/importar_dados">
+                <menu>
+                    <item
+                        android:id="@+id/baixar"
+                        android:title="@string/baixar_arquivo"/>
+                    <item
+                        android:id="@+id/atualizar"
+                        android:title="@string/atualizar_banco"/>
+                </menu>
+            </item>
+            <item
+                android:id="@+id/exporta"
+                android:title="@string/exportar_dados">
+                <menu>
+                    <item
+                        android:id="@+id/gerar"
+                        android:title="@string/gerar_arquivo"/>
+                    <item
+                        android:id="@+id/enviar"
+                        android:title="@string/enviar_arquivo"/>
+                    <item
+                            android:id="@+id/descarregar"
+                            android:title="@string/descarregar_informacoes"/>
+                </menu>
+            </item>
+            -->
+          <!--   <item
+                android:id="@+id/limpar"
+                android:title="Limpar Apontamentos"/> -->
+            <item
+                android:id="@+id/about"
+                android:title="@string/dispositivo"/>
+            <item
+                android:id="@+id/app"
+                android:title="@string/nova_versao"/>
+
+            <item
+                android:id="@+id/modulos"
+                android:title="@string/modulos"/>
+            </menu>
+    </item>
+    <item
+        android:id="@+id/local"
+        android:title="@string/menu_localizacao"/>
+  
+    
+</menu>

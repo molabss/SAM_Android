@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/layoutDetailEqp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TableLayout
+                    android:id="@+id/tableAbs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center" >
+
+                    <TableRow
+                        android:id="@+id/tbRwAbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                            <AutoCompleteTextView
+                                android:id="@+id/absCmbEqp"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:completionThreshold="1"
+                                android:padding="10dp"
+                                android:textSize="20sp"
+                                android:hint="@string/hint_selecione">
+                            </AutoCompleteTextView>
+
+                            <AutoCompleteTextView
+                                android:id="@+id/absCmbDt"
+                                android:layout_width="130dp"
+                                android:layout_height="50dp"
+                                android:completionThreshold="1"
+                                android:dropDownWidth="300dp"
+                                android:padding="10dp"
+                                android:textSize="20sp"
+                                android:hint="@string/hint_data"/>
+
+                            <TextView
+                                android:id="@+id/absTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TableRow
+                            android:id="@+id/tbRwCns"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="10dp" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal" >
+
+                                <Button
+                                    android:id="@+id/btSearch"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+                                    android:gravity="center"
+                                    android:text="@string/buscar"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp" >
+
+                                <Button
+                                    android:id="@+id/btRae"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/combustivel"
+                                    android:gravity="center" />
+                            </LinearLayout>
+                        </TableRow>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TableLayout
+                        android:id="@+id/tableHeaderAbsTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TableLayout
+                        android:id="@+id/tableHeaderAbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ScrollView
+                        android:id="@+id/scrollViewEqpFull"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TableLayout
+                                android:id="@+id/tableGridAbs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableFooterAbs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

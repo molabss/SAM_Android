@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/DARK_GRAY"
+              android:gravity="center|left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/dataTextView"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:text="@string/dados"/>
+
+    <TextView
+            android:id="@+id/equipeTextView"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:text="@string/equipe" />
+
+    <TextView
+            android:id="@+id/localizacaoTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:text="@string/localizacao_col" />
+
+    <ImageView
+            android:id="@+id/produtividadeImage"
+            android:src="@drawable/graph"
+            android:contentDescription="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+</LinearLayout>

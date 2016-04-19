@@ -1,0 +1,191 @@
+-injars 'C:\Users\moises_santana\AndroidStudioProjects\SAM_Android\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\moises_santana\AndroidStudioProjects\SAM_Android\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Desenvolvimento\AndroidSDK\build-tools\23.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontwarn
+-printconfiguration 'C:\Users\moises_santana\AndroidStudioProjects\SAM_Android\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class br.com.constran.mobile.system.ApplicationInit {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class br.com.constran.mobile.PrincipalActivity {
+    <init>();
+}
+
+-keep class com.dm.zbar.android.scanner.ZBarScannerActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.LoginActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.LocalizacaoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ConfiguracoesActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.EquipamentosMovimentacaoDiariaActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.EquipamentosParteDiariaActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.RelatorioEnvioActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ViagensSearchActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.EventosSearchActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.DetalhesEquipamentoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ApropriacaoMovimentacaoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ApropriacaoEquipamentoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoViewActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoRaeActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoAuthActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoConfirmActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentosSearchActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoTempActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoPostoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoPostoTransfActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.AbastecimentoLubrificacaoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.LubrificacaoDetalhesActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ManutencaoEquipamentoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ManutencaoListaEquipamentoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ManutencaoServicosActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ManutencaoBuscaActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.fragment.RegistroEventosActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.EventoEquipeGridActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.ComposicaoEquipeGridActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.AjusteEquipeGridActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.AjusteIndividualGridActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.ProducaoEquipeGridActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.MaoObraServicoGridActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.AddEquipeLocalGridActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.maodeobra.AddTemporarioActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.indicepluviometrico.IndicePluviometricoServicoGridActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.view.indicepluviometrico.AddIndicePluviometricoActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.ModulosActivity {
+    <init>();
+}
+
+-keep class br.com.constran.mobile.backup.BackupService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginLeft="25dp"
+              android:layout_marginRight="25dp"
+              android:layout_marginTop="25dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp">
+
+        <!-- Cabeçalho -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/BLACK"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="55dp"
+                    android:text="@string/HEADER_ADD_INTEGRANTE_TEMP"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:id="@+id/cabecalhoTextView"/>
+
+        </LinearLayout>
+
+        <!-- Linha Equipe -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/equipe"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/equipeCol"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/equipeTextView"
+                    android:text="@string/equipe"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Linha Funcionario -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/integrante"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/localizacaoTextView"/>
+
+            <AutoCompleteTextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:completionThreshold="1"
+                    android:hint="@string/hint_selecione"
+                    android:id="@+id/integranteAutoComplete"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Linha Hora saida -->
+        <LinearLayout
+                android:id="@+id/conteudoLinearLayout3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="55dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/data_saida"
+                    android:textColor="@color/WHITE"
+                    android:gravity="center|left"
+                    android:background="@color/GRAY2"
+                    android:textSize="20sp"
+                    android:id="@+id/dataSaidaTextView"/>
+
+            <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:maxLength="10"
+                    android:id="@+id/dataSaidaEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+            <Button
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="@string/cancelar"
+                    android:id="@+id/btnCancelar"/>
+
+            <Button
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="@string/salvar"
+                    android:id="@+id/btnSalvar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

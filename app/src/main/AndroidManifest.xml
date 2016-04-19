@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.constran.mobile"
+    android:versionCode="4"
+    android:versionName="04.29.00(BETA)" >
+
+    <!-- versionCode="1"-->
+    <!--android:versionName="04.04.03" ULTIMA VERSAO TRABALHADA PELO MATEUS VITALLI-->
+    <!--android:versionName="04.04.04" AJUSTADO LOCAL DE CRIACAO DO BANCO DE DADOS. CRIANDO NO CARTAO DE MEMORIA-->
+    <!--android:versionName="04.04.05" CORRIGIDO ERRO DIVIDE BY ZERO AO BAIXAR ARQUIVO DE DADOS-->
+    <!--android:versionName="04.04.06" ADICIONADO DESCRICAO DO EQUIPAMENTO NA SELECAO DO EQUIPAMENTO NA AUTORIZACAO DE ABASTECIMENTO-->
+    <!--android:versionName="04.04.07" CORRIGIDO ERRO AO DESAPROPRIAR/ REAPROPRIAR VIAGEM NO MODULO DE MOVIMENTACAO-->
+    <!--android:versionName="04.04.08" CORRIGIDO ERRO AO ABASTECER EQUIPAMENTO SEM OPERADOR COM FALTA DE PARAMETRIZACAO EXIGE-USTIFICATIVA='SIM'-->
+    <!-- *************** -->
+
+    <!-- versionCode="2"-->
+    <!--android:versionName="04.05.00" ADICIONADA ROTINA DE BACKUP PARA O ARQUIVO DE BANCO DE DADOS. MAS AINDA DESATIVADO.-->
+    <!--android:versionName="04.06.00" ADICIONADA NOVA FORMA DE ARMAZENAR AS CONFIGURAÇÕES DO DISPOSITIVO. USANDO SHARED PREFERENCES AO INVÉS DE ARQUIVO CONFIG.JSON-->
+    <!--android:versionName="04.07.00" ADICIONADA FUNCIONALIDADE DE SISTEMA PARA EXECUTAR TAREFAS ANTES DA INICIALIZAÇÃO DA TELA PRINCIPAL-->
+    <!--android:versionName="04.08.00" ADICIONADA CRIAÇÃO AUTOMÁTICA DE DIRETÓRIOS NA PRIMEIRA VEZ QUE O APLICATIVO É INICIALIZADO-->
+    <!--android:versionName="04.09.00" DIRETÓRIOS INÚTEIS FORAM REMOVIDOS DO APLICATIVO-->
+    <!--android:versionName="04.10.00" ADICIONADA SUPORTE A CRIAÇÃO DE DIRETORIOS E BANCO DE DADOS DE ACORDO COM A VERSÃO DO ANDROID VISTO QUE ANDROID APARTIR DE 4.4 NAO TEM ACESSO AO CARTÃO DE MEÓRIA-->
+    <!--android:versionName="04.11.00" MELHORIAS FEITAS NOS MÉTODOS QUE FAZEM DOWNLOAD DO ARQUIVO APK DO SERVIDOR FTP-->
+    <!--android:versionName="04.12.00" MÉTODOS INÚTEIS/NUNCA USADOS DA CLASSE VIEW/UTIL FORAM DESATIVADOS-->
+    <!--android:versionName="04.13.00" MÉTODOS INÚTEIS/NUNCA USADOS DA CLASSE ABSTRACTACTIVITY FORAM DESATIVADOS-->
+    <!--android:versionName="04.14.00" MELHORIA FEITA NA FORMA COMO ARMAZENA TEMPORARIAMENTE UM ABASTECIMENTO EM ANDAMENTO-->
+    <!--android:versionName="04.15.00" ADICIONADO NOVA FUNCIONALIDADE PARA ATIVAR/ DESATIVAR ACESSO A MODULOS NO TABLET-->
+    <!--android:versionName="04.16.00" ADICIONADO NOVO MÓDULO DE MANUTENÇÃO-->
+    <!--android:versionName="04.17.00" ADICIONADO ALERTA EM ONCTIVITYRESULT DE ABSTRACT AVTIVITY QUANDO QRCODE DO FORMULARIO FOI INVALIDO - MODULO DE MOVIMENTAÇÃO-->
+    <!--android:versionName="04.18.00" ADICIONADO SENHA DE FABRICA QUE NAO PODE SER ALTERADA 210419-->
+    <!-- *************** -->
+
+    <!-- versionCode="3"-->
+    <!-- android:versionName="04.19.00" ADICIONADO NOVO COMPONENTE PARA TRATAR DE COMUNICAÇÕES
+    HTTP E ENCAPSULAMENTO DE COMPLEXIDADES DE COMUNICAÇÃO E PARSE DE DADOS-->
+    <!-- android:versionName="04.20.00" ADICIONADO NOVO COMPONENTE PARA TRATAR DAS IMPORTAÇÕES DE DADOS -->
+    <!-- android:versionName="04.21.00" ADICIONADO NOVO COMPONENTE PARA TRATAR DAS EXPORTACOES DE DADOS -->
+    <!-- android:versionName="04.23.00" ADICIONADO NOVO COMPONENTE PARA TRATAR DO DOWNLOAD DE NOVA VERSAO -->
+    <!-- android:versionName="04.23.01" AJUSTADO VALOR MAXIMO DO CAMPO QUANTIDADE NA TELA DE SALDO DE POSTO -->
+    <!-- android:versionName="04.23.03" INCLUIDO TEXTO "SELECIONE" EM SELECIONAR SERVICOS NO MODULO DE MANUTENCAO-->
+    <!-- android:versionName="04.23.04" INCLUIDO INCLUIDA VALIDACAO DO CAMPO SERVICOS, SE USUARIO SELECIONOU UM SERVICO-->
+
+    <!-- android:versionName="04.23.05" ADICIONADA LISTAGEM DE EQUIPAMENTOS QUE TEM SERVICOS DE MANUTENCAO
+    ASSOCIADOS PARA POPULAR CAMPO EQUIPAMENTOS NO MODULO DE MANUTENCAO-->
+
+    <!-- android:versionName="04.23.06" INCLUIDO TRECHOS DE CODIGOS QUE ESTAVAM FALTANDO E CAUSAVAM O NAO PREENCHIMENTO
+    DO SPINNER SELECIONE SERVICO DO MODULO DE MANUTENCAO-->
+
+    <!-- android:versionName="04.23.07" ADICIONADA VERIFICACAO DE DISPONIBILIDADE DE SERVICO PARA A FRENTE DE OBRA E ATIVIDADE
+    CONFIGURADA. MODULO DE PARTE DIARIA DE EQUIPAMENTOS-->
+
+
+    <!-- android:versionName="04.23.08" ADICIONADA ORDEM ALFABETICA NO CARREGAMENTO DOS SERVICOS MODULO DE MANUTENCAO-->
+    <!-- android:versionName="04.24.00" ADICIONADO NOVOS BOTOES e NOVO LOGO-->
+    <!-- android:versionName="04.25.00" ADICIONADO LABEL SERVIDOR NO RODAPE TELA INICIAL-->
+    <!-- android:versionName="04.25.01" ADICIONADO LIMPAR CAMPO AO EQUIPAMENTOS AO VOLTAR PARA TELA DE LISTA DE EQUIPAMENTOS MODULO DE MANUTENCAO-->
+    <!-- android:versionName="04.25.02" CORRIGIDO TAMANHO DA LETRA M DO LOGO DO SAM-->
+
+    <!-- android:versionName="04.25.03" CORRIGIDO CARREGAR LISTA DE DE TODOS OS SERVIÇOS QUANDO CAMPO OBRA.USAPLANSERVICO == N-->
+
+    <!-- android:versionName="04.26.00" ADICIONADO FUNCIONALIDADE PARA REGISTRAR E ENVIAR LOG DE ACOES EFETUADAS NO MODULO DE ABASTECIMENTO-->
+
+    <!-- android:versionName="04.26.01" EFETUADA NOVA CORRECAO NA LISTAGEM DE ABASTECIMENTOS EFETUADOS NO MODULO DE ABASTECIMENTO, PROBLEMA DO NULL POINTER E DE ACULTACAO DOS REGISTROS-->
+    <!-- ************** -->
+
+    <!-- android:versionName="04.27.00" ADICIONADA CONDIÇÃO PARA IMPORTAR DADOS APENAS SE CADA MODULO QUE NECESSITA DO DADO ESTIVER ATIVADO-->
+
+    <!-- android:versionName="04.27.01" ADICIONARO READ TIMEOUT PARA 15 SEGUNDOS EM AppHTTP.java - -->
+
+    <!-- android:versionName="04.27.02" CORRIGIDO VERIFICACAO SE MOD MANUTENCAO ATIVO/DESATIVO EM Importador.java - -->
+
+    <!-- android:versionName="04.28.00" DIRECIONADO CONECTIVIDADE PARA NOVOS WEBSERVICES REST (CLASSES Importador.java e Exportador.java)- -->
+
+    <!-- android:versionName="04.28.01(BETA)" CORRIGIDO CAMPO DE QUANTIDADE DA TELA SALDO DO POSTO, ESTAVA ACEITANDO VALORES REAIS MAS O BANCO DE DADOS SQL SERVER SO ACEITA VALORES INTEIROS-->
+
+    <!-- android:versionName="04.29.00(BETA) Ativado service de backup do banco de dados para versões do android a partir de 4.4-->
+
+    <!-- versionCode  = VERSÃO DA GOOGLE PLAY -->
+    <!-- versionName  = NOVO MÓDULO . NOVA MELHORIA . NOVA CORREÇÃO -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19"/>
+
+    <application
+        android:name="br.com.constran.mobile.system.ApplicationInit"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:textStyle="bold"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".PrincipalActivity"
+            android:finishOnTaskLaunch="false"
+            android:label="@string/app_name"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        <activity android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
+                  android:screenOrientation="landscape"
+                  android:label="@string/app_name" />
+        !-->
+
+
+        <activity android:name=".qrcode.ZBarScannerActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" />
+
+
+        <activity
+            android:name="LoginActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="LocalizacaoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="ConfiguracoesActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="EquipamentosMovimentacaoDiariaActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="EquipamentosParteDiariaActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+                android:name="RelatorioEnvioActivity"
+                android:finishOnTaskLaunch="false"
+                android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="ViagensSearchActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="EventosSearchActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="DetalhesEquipamentoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="ApropriacaoMovimentacaoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="ApropriacaoEquipamentoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentoViewActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentoRaeActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentoAuthActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentoConfirmActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentosSearchActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentoTempActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentoPostoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />   
+        <activity
+            android:name="AbastecimentoPostoTransfActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="AbastecimentoLubrificacaoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="LubrificacaoDetalhesActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Manutençoes -->
+        <activity
+            android:name=".ManutencaoEquipamentoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name=".ManutencaoListaEquipamentoActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name=".ManutencaoServicosActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name=".ManutencaoBuscaActivity"
+            android:finishOnTaskLaunch="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <!-- Mao-de-Obra -->
+
+        <activity
+            android:name=".view.maodeobra.fragment.RegistroEventosActivity" android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="sensorPortrait" />
+
+
+        <activity
+                android:name=".view.maodeobra.EventoEquipeGridActivity" android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+
+
+        <activity
+                android:name=".view.maodeobra.ComposicaoEquipeGridActivity" android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+        <activity
+                android:name=".view.maodeobra.AjusteEquipeGridActivity" android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+        <activity
+                android:name=".view.maodeobra.AjusteIndividualGridActivity" android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+        <activity
+                android:name=".view.maodeobra.ProducaoEquipeGridActivity" android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+        <activity
+                android:name=".view.maodeobra.MaoObraServicoGridActivity" android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+        <activity
+                android:name=".view.maodeobra.AddEquipeLocalGridActivity" android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+        <activity
+                android:name=".view.maodeobra.AddTemporarioActivity" android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+
+        <!-- Índice Pluviométrico -->
+        <activity
+                android:name=".view.indicepluviometrico.IndicePluviometricoServicoGridActivity"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+        <activity
+                android:name=".view.indicepluviometrico.AddIndicePluviometricoActivity"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name="ModulosActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="sensorPortrait" />
+
+
+        <service android:name=".backup.BackupService">
+            <intent-filter>
+                <action android:name="BACKUP_SERVICE"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

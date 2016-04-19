@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:orientation="vertical"
+       android:background="@color/WHITE">
+
+   <LinearLayout android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_marginLeft="25dp"
+                 android:layout_marginRight="25dp"
+                 android:layout_marginTop="25dp"
+                 android:orientation="vertical"
+                 android:gravity="center_vertical">
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/BLACK"
+                android:orientation="horizontal" >
+
+                    <TextView
+                            android:id="@+id/man_tvEquipamentoDesc"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/WHITE"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+            <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top" >
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top" >
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="@color/BLACK"
+                                android:textSize="18sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top" >
+
+
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="@color/BLACK"
+                                android:textSize="18sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY">
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/GRAY2"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="45dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Hora Início"
+                                android:textColor="@color/WHITE"
+                                android:textSize="18sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                        <EditText
+                                android:id="@+id/man_etHoraInicio"
+                                android:layout_width="50dp"
+                                android:layout_height="45dp"
+                                android:inputType="number|none"
+                                android:maxLength="2"
+                                android:paddingRight="10dp"
+                                android:textSize="20sp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/dois_pontos"
+                                android:textSize="20sp" />
+
+                        <EditText
+                                android:id="@+id/man_etMinutoInicio"
+                                android:layout_width="50dp"
+                                android:layout_height="45dp"
+                                android:inputType="number|none"
+                                android:maxLength="2"
+                                android:textSize="20sp" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top" >
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/man_rowHorimetro"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/GRAY2"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="45dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Horímetro"
+                                android:textColor="@color/WHITE"
+                                android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                        <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="top"
+                                android:background="@color/DARK_GRAY"
+                                android:orientation="horizontal" >
+
+                            <EditText
+                                    android:id="@+id/man_etHorimetro"
+                                    android:layout_width="100dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="7"
+                                    android:textSize="18sp"
+                                    />
+                            <requestFocus />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:id="@+id/man_rowHodometro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/GRAY2"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="45dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Hodômetro"
+                                android:textColor="@color/WHITE"
+                                android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                        <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="top"
+                                android:background="@color/DARK_GRAY"
+                                android:orientation="horizontal" >
+
+                            <EditText
+                                    android:id="@+id/man_etHodometro"
+                                    android:layout_width="100dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:inputType="number|none"
+                                    android:maxLength="7"
+                                    android:textSize="18sp" >
+
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/GRAY2"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="45dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Hora Término"
+                                android:textColor="@color/WHITE"
+                                android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                        <EditText
+                                android:id="@+id/man_etHoraTermino"
+                                android:layout_width="50dp"
+                                android:layout_height="45dp"
+                                android:inputType="number|none"
+                                android:maxLength="2"
+                                android:paddingRight="10dp"
+                                android:textSize="20sp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/dois_pontos"
+                                android:textSize="20sp" />
+
+                        <EditText
+                                android:id="@+id/man_etMinutoTermino"
+                                android:layout_width="50dp"
+                                android:layout_height="45dp"
+                                android:inputType="number|none"
+                                android:maxLength="2"
+                                android:textSize="20sp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:textSize="20sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/GRAY2"
+                            android:orientation="horizontal" >
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top" >
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/GRAY2"
+                            android:orientation="horizontal" >
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/DARK_GRAY">
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:background="@color/GRAY2"
+                            android:orientation="horizontal" >
+
+                        <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/observacoes"
+                                android:textColor="@color/WHITE"
+                                android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="80dp"
+                            android:layout_gravity="top"
+                            android:background="@color/DARK_GRAY"
+                            android:orientation="horizontal" >
+
+                        <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="80dp"
+                                android:layout_gravity="top"
+                                android:background="@color/DARK_GRAY"
+                                android:orientation="horizontal" >
+
+                            <EditText
+                                    android:id="@+id/man_etObservacao"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:maxLength="100"
+                                    android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical" >
+
+            <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="5dp" >
+
+                <Button
+                        android:id="@+id/man_btnSalvar"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salvar" />
+
+                <Button
+                        android:id="@+id/man_btnCancelar"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancelar" />
+            </LinearLayout>
+        </LinearLayout>
+
+   </LinearLayout>
+
+
+</LinearLayout>

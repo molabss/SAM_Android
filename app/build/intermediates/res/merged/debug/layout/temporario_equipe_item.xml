@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/DARK_GRAY"
+              android:gravity="center|left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/integranteCheckBox"
+            android:gravity="center|left"/>
+
+    <TextView
+            android:id="@+id/integranteText"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:text="@string/integrante"/>
+
+    <TextView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:id="@+id/matriculaText"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:text="@string/matricula" />
+
+    <ImageView
+            android:id="@+id/excluirImage"
+            android:src="@drawable/delete"
+            android:contentDescription="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+</LinearLayout>

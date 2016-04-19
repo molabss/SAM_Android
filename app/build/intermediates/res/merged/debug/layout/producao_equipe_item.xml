@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/DARK_GRAY"
+              android:gravity="center|left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/horarioTextView"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textColor="@color/BLACK"
+            android:text="@string/horario" />
+
+    <TextView
+            android:id="@+id/servicoTextView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textColor="@color/BLACK"
+            android:text="@string/servico" />
+
+    <TextView
+            android:id="@+id/producaoTextView"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:textColor="@color/BLACK"
+            android:text="@string/producao" />
+
+    <ImageView
+            android:id="@+id/editarImage"
+            android:src="@drawable/edit"
+            android:contentDescription="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+</LinearLayout>

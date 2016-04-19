@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/DARK_GRAY"
+                android:layout_weight="1">
+
+            <AutoCompleteTextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:hint="@string/hint_selecione"
+                    android:id="@+id/eventoEquipeAutoComplete"
+                    android:background="@color/DARK_GRAY"
+                    android:completionThreshold="1"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"/>
+
+            <Button
+                    android:id="@+id/btnAddEquipe"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp" />
+        </LinearLayout>
+
+        <!--<Button-->
+                <!--android:id="@+id/btnConsultaEquipe"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:text="@string/consulta"-->
+                <!--android:textSize="20sp" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

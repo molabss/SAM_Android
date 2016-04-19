@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/layoutDetailEqp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollViewEqpFull"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp" >
+
+                    <TableLayout
+                        android:id="@+id/tableMov"
+                        android:layout_width="550dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:gravity="center" >
+
+                        <TableRow
+                            android:id="@+id/tbRwMov"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="2dp"
+                            android:paddingTop="0dp" tools:ignore="UselessParent">
+
+                            <LinearLayout
+                                android:layout_width="550dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:orientation="horizontal" >
+
+                                <Button
+                                    android:id="@+id/btConfirmar"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center"
+                                    android:text="@string/concluir"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableHeaderEqp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp" >
+
+                            <TableLayout
+                                android:id="@+id/tableMov"
+                                android:layout_width="550dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:gravity="center" >
+
+                                <TableRow
+                                    android:id="@+id/tbRwMov"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:padding="2dp"
+                                    android:paddingTop="0dp" >
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/LIGHT_GRAY"
+                                        android:orientation="horizontal"
+                                        android:paddingRight="10dp" >
+
+                                        <AutoCompleteTextView
+                                            android:id="@+id/absComLubr"
+                                            android:layout_width="200dp"
+                                            android:layout_height="50dp"
+                                            android:completionThreshold="1"
+                                            android:textSize="20sp" >
+
+                                            <requestFocus />
+                                        </AutoCompleteTextView>
+
+                                        <EditText
+                                            android:id="@+id/absQtd"
+                                            android:layout_width="100dp"
+                                            android:layout_height="45dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:inputType="numberDecimal"
+                                            android:maxLength="9"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/absUN"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:textSize="20sp" />
+
+                                        <Button
+                                            android:id="@+id/btAdd"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/add"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="10dp"
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableGridMov"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:id="@+id/tableFooterEqp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
