@@ -1,5 +1,17 @@
 [
     {
+        "merged": "C:\\GIT_REP\\SAM_Android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_menu_aux.xml",
+        "source": "C:\\GIT_REP\\SAM_Android\\app\\src\\main\\res\\menu\\activity_menu_aux.xml"
+    },
+    {
+        "merged": "C:\\GIT_REP\\SAM_Android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_menu.xml",
+        "source": "C:\\GIT_REP\\SAM_Android\\app\\src\\main\\res\\menu\\activity_menu.xml"
+    },
+    {
+        "merged": "C:\\GIT_REP\\SAM_Android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_menu_aux_no_logout.xml",
+        "source": "C:\\GIT_REP\\SAM_Android\\app\\src\\main\\res\\menu\\activity_menu_aux_no_logout.xml"
+    },
+    {
         "merged": "C:\\Users\\moises_santana\\AndroidStudioProjects\\constran2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_menu_aux_no_logout.xml",
         "source": "C:\\Users\\moises_santana\\AndroidStudioProjects\\constran2\\app\\src\\main\\res\\menu\\activity_menu_aux_no_logout.xml"
     },
@@ -8,12 +20,12 @@
         "source": "C:\\Users\\moises_santana\\AndroidStudioProjects\\SAM_Android\\app\\src\\main\\res\\menu\\activity_menu_aux.xml"
     },
     {
-        "merged": "C:\\Users\\moises_santana\\AndroidStudioProjects\\SAM_Android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_menu_aux_no_logout.xml",
-        "source": "C:\\Users\\moises_santana\\AndroidStudioProjects\\SAM_Android\\app\\src\\main\\res\\menu\\activity_menu_aux_no_logout.xml"
-    },
-    {
         "merged": "C:\\Users\\moises_santana\\AndroidStudioProjects\\constran2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_menu_aux.xml",
         "source": "C:\\Users\\moises_santana\\AndroidStudioProjects\\constran2\\app\\src\\main\\res\\menu\\activity_menu_aux.xml"
+    },
+    {
+        "merged": "C:\\Users\\moises_santana\\AndroidStudioProjects\\SAM_Android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_menu_aux_no_logout.xml",
+        "source": "C:\\Users\\moises_santana\\AndroidStudioProjects\\SAM_Android\\app\\src\\main\\res\\menu\\activity_menu_aux_no_logout.xml"
     },
     {
         "merged": "C:\\Users\\moises_santana\\AndroidStudioProjects\\SAM_Android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_menu.xml",

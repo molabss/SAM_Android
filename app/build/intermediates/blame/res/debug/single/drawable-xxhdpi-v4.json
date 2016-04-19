@@ -4,6 +4,10 @@
         "source": "C:\\Users\\moises_santana\\AndroidStudioProjects\\constran2\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\GIT_REP\\SAM_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\GIT_REP\\SAM_Android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\moises_santana\\AndroidStudioProjects\\SAM_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\moises_santana\\AndroidStudioProjects\\SAM_Android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     }
